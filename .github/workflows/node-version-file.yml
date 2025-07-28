@@ -60,7 +60,8 @@ jobs:
           gh pr create \
             --title "$PR_COMMIT" \
             --body "$PR_BODY" \
-            --base ${{ github.ref_name }}
+            --base ${{ github.ref_name }} \
+            --draft
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FROM: ${{ steps.current_version.outputs.version }}
