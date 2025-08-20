@@ -1,4 +1,4 @@
-buildImage = 'mcr.microsoft.com/playwright:v1.54.0'
+buildImage = 'mcr.microsoft.com/playwright:v1.55.0'
 providers = []
 
 [variables]
