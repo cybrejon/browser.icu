@@ -25,12 +25,12 @@
           >::::::</span
         >
       </h1>
-      <p class="text-foreground-alt text-3xl">
+      <p class="text-foreground-alt text-xl text-foreground/60">
         Help AI Agent interns become more human, and earn a share of their
         income.
       </p>
       <div class="flex gap-4">
-        <Button href="#waitlist" variant="outline">JOIN WAITLIST</Button>
+        <Button href="#waitlist" variant="outline">Join waitlist</Button>
       </div>
     </div>
   </div>
