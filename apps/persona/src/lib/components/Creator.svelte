@@ -15,9 +15,9 @@
     <GridPattern x="50%" y="100%" />
   </div>
   <div class="relative mx-auto max-w-5xl pt-16 sm:px-6">
-    <div class="sm:rounded-6xl border border-border/50 bg-zinc-950 pt-px">
+    <div class="sm:rounded-6xl border-border/50 border bg-zinc-950 pt-px">
       <div
-        class="shadow-[8px_8px_var(--color-primary)] relative border text-primary mx-auto -mt-16 h-44 w-44 overflow-hidden bg-zinc-800 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72"
+        class="text-primary relative mx-auto -mt-16 h-44 w-44 overflow-hidden border bg-zinc-800 shadow-[8px_8px_var(--color-primary)] md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72"
       >
         <enhanced:img
           class="absolute inset-0 h-full w-full object-cover"
@@ -25,8 +25,8 @@
           alt="Creator bio"
           sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
         />
-        <CornerBracket class='w-12 h-12' />
-        <CornerBracket position='bottom-right' class='w-12 h-12' />
+        <CornerBracket class="h-12 w-12" />
+        <CornerBracket position="bottom-right" class="h-12 w-12" />
       </div>
       <div class="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
         <SectionHeading number="5" id="creator-title">Creator</SectionHeading>

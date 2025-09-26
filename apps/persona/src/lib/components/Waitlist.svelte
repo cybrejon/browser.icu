@@ -6,7 +6,7 @@
 <section
   id="waitlist"
   aria-label="Free preview"
-  class="scroll-mt-14 bg-primary sm:scroll-mt-32"
+  class="bg-primary scroll-mt-14 sm:scroll-mt-32"
 >
   <div class="overflow-hidden lg:relative">
     <Container
@@ -32,9 +32,7 @@
           Get notified before everyone else&nbsp;
           <span aria-hidden="true">&rarr;</span>
         </h3>
-        <div
-          class="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5"
-        >
+        <div class="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5">
           <div class="relative sm:static sm:flex-auto">
             <input
               type="email"
@@ -51,7 +49,7 @@
           <button
             type="submit"
             color="white"
-            class="active:bg-primary mt-4 w-full cursor-pointer py-1 px-2 mr-2 hover:bg-white hover:text-black active:text-white sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
+            class="active:bg-primary mt-4 mr-2 w-full cursor-pointer px-2 py-1 hover:bg-white hover:text-black active:text-white sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
           >
             Remind me
           </button>

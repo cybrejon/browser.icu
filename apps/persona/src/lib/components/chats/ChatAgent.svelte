@@ -1,12 +1,10 @@
 <div class="flex justify-end">
-  <div class="bg-primary  rounded-bl-2xl px-4 py-2 text-white">
+  <div class="bg-primary rounded-bl-2xl px-4 py-2 text-white">
     <p>Please analyze the website.</p>
   </div>
 </div>
 <div class="flex">
-  <div
-    class=" bg-foreground-alt/10 border-primary  rounded-br-2xl border p-4"
-  >
+  <div class=" bg-foreground-alt/10 border-primary rounded-br-2xl border p-4">
     <p>
       Let me scroll down to see more of the website's content and design
       elements for a comprehensive analysis.
@@ -14,9 +12,7 @@
   </div>
 </div>
 <div class="flex">
-  <div
-    class=" bg-foreground-alt/10 border-primary  rounded-br-2xl border p-4"
-  >
+  <div class=" bg-foreground-alt/10 border-primary rounded-br-2xl border p-4">
     <p>
       <strong>Strengths:</strong>
     </p>
@@ -36,9 +32,7 @@
   </div>
 </div>
 <div class="flex">
-  <div
-    class=" bg-foreground-alt/10 border-primary  rounded-br-2xl border p-4"
-  >
+  <div class=" bg-foreground-alt/10 border-primary rounded-br-2xl border p-4">
     <p>
       <strong>Concerns:</strong>
     </p>

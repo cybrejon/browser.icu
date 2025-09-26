@@ -111,7 +111,7 @@
     {/if}
   </nav>
   <div
-    class="hidden border-b sm:flex sm:h-20 sm:justify-center border-border sm:bg-background/95 sm:[@supports(backdrop-filter:blur(0))]:bg-background/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur-sm"
+    class="border-border sm:bg-background/95 sm:[@supports(backdrop-filter:blur(0))]:bg-background/80 hidden border-b sm:flex sm:h-20 sm:justify-center sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur-sm"
   >
     <ol
       role="list"
