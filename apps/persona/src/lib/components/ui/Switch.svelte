@@ -21,7 +21,7 @@
     {...restProps}
   >
     <Switch.Thumb
-      class="bg-background data-[state=unchecked]:shadow-mini dark:border-background/30 dark:bg-background dark:shadow-popover pointer-events-none block size-[30px] shrink-0 transition-transform data-[state=checked]:translate-x-6 data-[state=unchecked]:translate-x-0 dark:border dark:data-[state=unchecked]:border"
+      class="pointer-events-none block size-[30px] shrink-0 bg-black transition-transform data-[state=checked]:translate-x-6 data-[state=unchecked]:translate-x-0"
     />
   </Switch.Root>
   <Label.Root class="font-medium" for={id}>{labelText}</Label.Root>
