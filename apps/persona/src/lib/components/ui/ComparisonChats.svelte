@@ -9,7 +9,9 @@
 {@render ChatUi()}
 
 {#snippet ChatUi()}
-  <div class={`${agentMode ? 'border-primary bg-primary/20' : 'border-border'} relative border border-t-4 border-b-4`}>
+  <div
+    class={`${agentMode ? "border-primary bg-primary/20" : "border-border"} relative border border-t-4 border-b-4`}
+  >
     {@render SwitchContainer()}
     <div class="overflow-y-scroll">
       <div
@@ -26,7 +28,7 @@
 {/snippet}
 
 {#snippet SwitchContainer()}
-  <div class="sm:absolute top-0 left-0 p-4">
+  <div class="top-0 left-0 p-4 sm:absolute">
     <Switch bind:checked={agentMode} labelText="「 AGENT MODE 」" />
   </div>
 {/snippet}

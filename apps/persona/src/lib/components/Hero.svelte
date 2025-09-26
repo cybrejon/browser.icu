@@ -25,7 +25,7 @@
           >::::::</span
         >
       </h1>
-      <p class="text-foreground-alt text-xl text-foreground/60">
+      <p class="text-foreground-alt text-foreground/60 text-xl">
         Help AI Agent interns become more human, and earn a share of their
         income.
       </p>

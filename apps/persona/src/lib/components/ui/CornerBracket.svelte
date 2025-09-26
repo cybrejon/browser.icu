@@ -1,7 +1,11 @@
 <script lang="ts">
-  const { position = 'top-left', class: className }: { position?: Position, class?: string } = $props()
+  import { cn } from "../../utils";
+
+  const {
+    position = "top-left",
+    class: className,
+  }: { position?: Position; class?: string } = $props();
   type Position = "top-left" | "top-right" | "bottom-left" | "bottom-right";
-  import { cn } from '../../utils';
 </script>
 
 {#if position === "top-left"}
@@ -22,7 +26,7 @@
 
 {#if position === "bottom-right"}
   <svg
-    class={cn(`absolute bottom-2 right-2 ${className}`)}
+    class={cn(`absolute right-2 bottom-2 ${className}`)}
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"

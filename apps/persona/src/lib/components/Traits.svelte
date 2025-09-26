@@ -312,15 +312,33 @@
           >
           <span class="text-primary">
             {#if isPersonaDropdownOpen}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.84 15.41l5.66-5.66l5.66 5.66l-.71.7l-4.95-4.95l-4.95 4.95z"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                ><path
+                  fill="currentColor"
+                  d="m5.84 15.41l5.66-5.66l5.66 5.66l-.71.7l-4.95-4.95l-4.95 4.95z"
+                /></svg
+              >
             {:else}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.84 9.59l5.66 5.66l5.66-5.66l-.71-.7l-4.95 4.95l-4.95-4.95z"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                ><path
+                  fill="currentColor"
+                  d="m5.84 9.59l5.66 5.66l5.66-5.66l-.71-.7l-4.95 4.95l-4.95-4.95z"
+                /></svg
+              >
             {/if}
           </span>
         </button>
 
         {#if isPersonaDropdownOpen}
-          <div class="mt-2 divide-y divide-border border border-border">
+          <div class="divide-border border-border mt-2 divide-y border">
             {#each contents as persona (persona.identity.Name)}
               {#if persona.identity.Name !== current_persona}
                 <button
@@ -332,7 +350,7 @@
                   }}
                 >
                   <enhanced:img
-                    class="w-20 border-r border-r-border grayscale"
+                    class="border-r-border w-20 border-r grayscale"
                     alt={`Switch to ${persona.identity.Name}`}
                     src={persona.avatar_img}
                   />
@@ -388,17 +406,35 @@
             onclick={() => (isDropdownOpen = !isDropdownOpen)}
           >
             <span class="font-medium">{current_tab}</span>
-          <span class="text-background">
-            {#if isDropdownOpen}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.84 15.41l5.66-5.66l5.66 5.66l-.71.7l-4.95-4.95l-4.95 4.95z"/></svg>
-            {:else}
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m5.84 9.59l5.66 5.66l5.66-5.66l-.71-.7l-4.95 4.95l-4.95-4.95z"/></svg>
-            {/if}
-          </span>
+            <span class="text-background">
+              {#if isDropdownOpen}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  ><path
+                    fill="currentColor"
+                    d="m5.84 15.41l5.66-5.66l5.66 5.66l-.71.7l-4.95-4.95l-4.95 4.95z"
+                  /></svg
+                >
+              {:else}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  ><path
+                    fill="currentColor"
+                    d="m5.84 9.59l5.66 5.66l5.66-5.66l-.71-.7l-4.95 4.95l-4.95-4.95z"
+                  /></svg
+                >
+              {/if}
+            </span>
           </button>
 
           {#if isDropdownOpen}
-            <div class="border-t border-t-border">
+            <div class="border-t-border border-t">
               {#each ["Identity", "Psychology", "Value Map", "Vocational", "Success Criteria"] as tab (tab)}
                 {#if tab !== current_tab}
                   <button
@@ -418,7 +454,7 @@
         </div>
 
         <!-- desktop tabs -->
-        <div class="hidden grid-cols-5 border-t border-b border-border sm:grid">
+        <div class="border-border hidden grid-cols-5 border-t border-b sm:grid">
           {#each ["Identity", "Psychology", "Value Map", "Vocational", "Success Criteria"] as tab (tab)}
             <button
               type="button"
