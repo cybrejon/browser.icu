@@ -1,5 +1,5 @@
-<script lang="ts">
-  import { Label, Switch, useId, type WithoutChildrenOrChild } from "bits-ui";
+<script>
+  import { Label, Switch, useId } from "bits-ui";
 
   let {
     id = useId(),
@@ -7,8 +7,6 @@
     ref = $bindable(null),
     labelText,
     ...restProps
-  }: WithoutChildrenOrChild<Switch.RootProps> & {
-    labelText?: string;
   } = $props();
 </script>
 
