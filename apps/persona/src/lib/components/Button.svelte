@@ -1,9 +1,6 @@
-<script lang="ts">
+<script>
   import { Button } from "bits-ui";
   import { cn } from "../utils";
-
-  type ButtonSize = "sm" | "md" | "lg";
-  type ButtonVariant = "primary" | "secondary" | "danger" | "outline" | "ghost";
 
   let {
     children,
@@ -17,17 +14,6 @@
     noShadow = false,
     fn = () => {},
     ...restProps
-  }: {
-    children: any;
-    class?: string;
-    transform?: boolean;
-    noOutline?: boolean;
-    variant?: ButtonVariant;
-    size?: ButtonSize;
-    disabled?: boolean;
-    href?: string;
-    noShadow?: boolean;
-    fn?: (event: MouseEvent) => void;
   } = $props();
 
   const variantStyles = {

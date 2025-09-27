@@ -1,11 +1,7 @@
-<script lang="ts">
+<script>
   import { cn } from "../../utils";
 
-  const {
-    position = "top-left",
-    class: className,
-  }: { position?: Position; class?: string } = $props();
-  type Position = "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  const { position = "top-left", class: className } = $props();
 </script>
 
 {#if position === "top-left"}
