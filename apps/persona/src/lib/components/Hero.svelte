@@ -3,7 +3,9 @@
   import GridPattern from "$lib/components/GridPattern.svelte";
 </script>
 
-<header class="grid min-h-[570px] grid-cols-1 md:grid-cols-2">
+<header
+  class="border-t-primary grid min-h-[570px] grid-cols-1 border-t md:grid-cols-2"
+>
   <div class="bg-primary relative min-h-96">
     <span class="opacity-20">
       <GridPattern />
