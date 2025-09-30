@@ -22,5 +22,5 @@
       class="pointer-events-none block size-[30px] shrink-0 bg-black transition-transform data-[state=checked]:translate-x-6 data-[state=unchecked]:translate-x-0"
     />
   </Switch.Root>
-  <Label.Root class="font-medium" for={id}>{labelText}</Label.Root>
+  <Label.Root class="text-sm font-medium" for={id}>{labelText}</Label.Root>
 </div>
