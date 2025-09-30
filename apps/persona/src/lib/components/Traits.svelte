@@ -1,4 +1,5 @@
 <script>
+  import Icon from "@iconify/svelte";
   import Container from "$lib/components/Container.svelte";
   import SectionHeading from "$lib/components/SectionHeading.svelte";
   import image_amelia from "$lib/images/avatars/persona/amelia.png?enhanced&w=124";
@@ -408,44 +409,28 @@
             <span class="font-medium">{current_tab}</span>
             <span class="text-background">
               {#if isDropdownOpen}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  ><path
-                    fill="currentColor"
-                    d="m5.84 15.41l5.66-5.66l5.66 5.66l-.71.7l-4.95-4.95l-4.95 4.95z"
-                  /></svg
-                >
+                <Icon icon="mdi:chevron-down" />
               {:else}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  ><path
-                    fill="currentColor"
-                    d="m5.84 9.59l5.66 5.66l5.66-5.66l-.71-.7l-4.95 4.95l-4.95-4.95z"
-                  /></svg
-                >
+                <Icon icon="mdi:chevron-up" />
               {/if}
             </span>
           </button>
 
           {#if isDropdownOpen}
             <div class="border-t-border border-t">
+              <p class="text-foreground/40 p-4 pb-0 text-sm">Select category</p>
               {#each ["Identity", "Psychology", "Value Map", "Vocational", "Success Criteria"] as tab (tab)}
                 {#if tab !== current_tab}
                   <button
                     type="button"
-                    class="hover:bg-foreground-alt/20 block w-full p-4 text-left"
+                    class="hover:bg-foreground-alt/20 inline-flex w-full items-center gap-2 p-4 text-left"
                     onclick={() => {
                       ChangeTab(tab);
                       isDropdownOpen = false;
                     }}
                   >
-                    {tab}
+                    <Icon icon="mdi:chevron-right" />
+                    <span>{tab}</span>
                   </button>
                 {/if}
               {/each}
