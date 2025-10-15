@@ -1,32 +1,28 @@
-<script>
-  import "../app.css";
-  import { browser } from "$app/environment";
-  import { PUBLIC_FATHOM_KEY } from "$env/static/public";
-  import FilmGrain from "../lib/components/FilmGrain.svelte";
+<script lang="ts">
+	import HeaderOrnament from '$components/header-ornament.svelte';
+	import Navbar from '$components/navbar.svelte';
+	import '@fontsource/michroma';
+	// 100-900 weight
+	import '@fontsource-variable/archivo';
+	import '../app.css';
 
-  const { children } = $props();
+	let { children } = $props();
 </script>
 
 <svelte:head>
-  <title>Browser.icu</title>
-  <meta
-    name="description"
-    content="Control the web's most powerful autonomous browser agents"
-  />
+	<title>Browser.icu</title>
 </svelte:head>
 
-<FilmGrain>
-  <div class="h-full bg-[hsl(210,20%,10%)]"></div>
-</FilmGrain>
+<div class=" relative min-h-dvh space-y-12">
+	<!-- HEADER START -->
+	<div class="h-7 overflow-hidden">
+		<HeaderOrnament class="text-foreground-darker/80 -translate-x-4" />
+	</div>
+	<Navbar />
+	<!-- HEADER END -->
 
-{@render children()}
+	{@render children()}
+</div>
 
-{#if browser}
-  <script
-    src="https://cdn.usefathom.com/script.js"
-    data-excluded-domains="localhost"
-    data-site={PUBLIC_FATHOM_KEY}
-    data-spa="auto"
-    defer
-  ></script>
-{/if}
+<!-- NOISE OVERLAY -->
+<div class="site-noise-overlay pointer-events-none fixed inset-0 z-50"></div>
