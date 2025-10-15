@@ -1,41 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap");
+@import "tailwindcss";
+@plugin '../tailwind.icons.js';
 
 @custom-variant hover (&:hover);
 
 @theme {
-	--font-display: 'Inter', 'sans-serif';
-	--font-michroma: 'Clash Display', 'sans-serif';
-	--font-syne: 'Syne', 'sans-serif';
-	--font-michroma: 'Michroma', sans-serif;
-	--font-display: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", "sans-serif";
+  --font-michroma: "Clash Display", "sans-serif";
+  --font-syne: "Syne", "sans-serif";
+  --font-michroma: "Michroma", sans-serif;
+  --font-display: "Archivo Variable", ui-sans-serif, system-ui, sans-serif;
 
-	--color-foreground: oklch(79.94% 0.0085 278.6);
-	--color-foreground-darker: oklch(52.94% 0.0191 274.56);
-	--color-button-shadow: oklch(0.36 0.039 274.56);
-	--color-primary: oklch(55.34% 0.1739 38.4);
-	--color-accent: oklch(77.9% 0.1607 61.43);
-	--color-secondary: oklch(72.22% 0.1358 150.86);
-	--color-background: oklch(0 0 308);
-	--color-card: oklch(28.46% 0.0079 264.44);
-	--color-alt: oklch(30.52% 0.0094 268.36);
-	--color-border: oklch(37.22% 0.0122 273.08);
+  --color-foreground: oklch(79.94% 0.0085 278.6);
+  --color-foreground-darker: oklch(52.94% 0.0191 274.56);
+  --color-button-shadow: oklch(0.36 0.039 274.56);
+  --color-primary: oklch(55.34% 0.1739 38.4);
+  --color-accent: oklch(77.9% 0.1607 61.43);
+  --color-secondary: oklch(72.22% 0.1358 150.86);
+  --color-background: oklch(0 0 308);
+  --color-card: oklch(28.46% 0.0079 264.44);
+  --color-alt: oklch(30.52% 0.0094 268.36);
+  --color-border: oklch(37.22% 0.0122 273.08);
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: var(--font-display);
-	background-color: var(--color-background);
-	color: var(--color-foreground);
+  font-family: var(--font-display);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 @utility border {
-	border-color: var(--color-border);
+  border-color: var(--color-border);
 }
 
 @utility site-noise-overlay {
-	background-image: url('/src/lib/images/noise.png');
+  background-image: url("/src/lib/images/noise.png");
 }
