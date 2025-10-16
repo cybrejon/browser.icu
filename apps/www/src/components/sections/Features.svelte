@@ -59,6 +59,7 @@
 
           <h2 class="font-michroma text-4xl font-medium">{item.title}</h2>
           <div class="text-foreground-darker space-y-8">
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
             {@html item.description}
           </div>
         </div>
