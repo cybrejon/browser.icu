@@ -48,8 +48,9 @@
   <div
     class="mx-auto space-y-12 px-4 py-12 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12"
   >
-    {#each features as item}
+    {#each features as item, i}
       <article
+        key={i}
         use:reveal={{ preset: "fly", duration: 300, easing: "easeInOutBack" }}
       >
         <div class=" flex flex-col gap-8">

@@ -6,11 +6,6 @@
 
   let browserWindow: HTMLElement | null = null;
 
-  interface Position {
-    x: number;
-    y: number;
-  }
-
   // util to find object position inside hero illustration container
   // didnt wanna do pure rive so css animations it is
   $effect(() => {
@@ -29,19 +24,7 @@
   });
 </script>
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div id="ref">
-  <!-- {@render task('TODO', 'Build and deploy site', { x: 278, y: 264 }, 'box-1 5s ease')}
-	{@render task('TASK', 'Buy groceries and use coupons', { x: 278, y: 264 }, 'box-2 6s ease')}
-	{@render task('TASK', 'Watch crypto prices', { x: 278, y: 264 }, 'box-3 7s ease')} -->
-
-  <!-- <div
-		class="border-border flex h-[281px] w-[384px] items-center justify-center border opacity-0"
-		style="animation: spinner-animation 7.5s;"
-	>
-		<Icon icon="svg-spinners:180-ring" style="font-size: 2rem; opacity: .4;" />
-	</div> -->
-
   <div
     class="border-border inline-block w-96 space-y-2 border p-2 pb-1"
     bind:this={browserWindow}
@@ -136,21 +119,6 @@
     </div>
   </div>
 </div>
-
-{#snippet task(
-  title: string,
-  description: string,
-  position: Position,
-  animation: string
-)}
-  <div
-    class="border-border bg-alt absolute max-w-60 border p-4 opacity-0"
-    style="top: 0; left: 0; animation: {animation}; transform: translate({position.x}px, {position.y}px)"
-  >
-    <p class="text-foreground-darker text-xs">{title}</p>
-    <p class="font-semibold">{description}</p>
-  </div>
-{/snippet}
 
 <style>
   @keyframes -global-spinner-animation {
