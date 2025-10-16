@@ -29,6 +29,7 @@
         >start</Button
       >
     </span>
+    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
     <a href="/" aria-label="Return to home">
       <div class="flex items-center gap-3">
         <p
