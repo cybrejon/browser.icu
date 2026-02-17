@@ -8,7 +8,7 @@ import {
 } from "playwright";
 import * as cursors from "../assets/cursors.svg.ts";
 import xdotoolParse from "../xdotool-parser/index.ts";
-import { withCachedPrompts } from "./claude-4-5-sonnet.utils.ts";
+import { withCachedPrompts } from "./claude-4-6-sonnet.utils.ts";
 
 type LaunchOptions = {
   session: string;
@@ -19,15 +19,16 @@ const MAX_STEPS = 512;
 const WXGA_WIDTH = 1280;
 const WXGA_HEIGHT = 800;
 
-const model = "claude-sonnet-4-5-20250929";
-const betas = ["computer-use-2025-01-24", "interleaved-thinking-2025-05-14"];
+const model = "claude-sonnet-4-6";
+const betas = ["computer-use-2025-11-24"];
 
-const tools: Anthropic.Beta.BetaToolComputerUse20250124[] = [
+const tools: Anthropic.Beta.BetaToolComputerUse20251124[] = [
   {
-    type: "computer_20250124",
+    type: "computer_20251124",
     name: "computer",
     display_width_px: WXGA_WIDTH,
     display_height_px: WXGA_HEIGHT,
+    display_number: 1,
     cache_control: { type: "ephemeral" },
   },
 ];
@@ -249,7 +250,7 @@ export default class Agent extends EventEmitter {
         tools,
         system,
         max_tokens: 5120,
-        thinking: { type: "enabled", budget_tokens: 1024 },
+        thinking: { type: "adaptive" },
         messages: withCachedPrompts(this._messages),
       });
 
