@@ -3,11 +3,13 @@
   import HeaderOrnament from "$components/header-ornament.svelte";
   import Stats from "$components/sections/Stats.svelte";
   import Features from "$components/sections/Features.svelte";
+  import Pricing from "$components/sections/Pricing.svelte";
 </script>
 
 <Hero />
 <Stats />
 <Features />
+<Pricing />
 <div class="border-border h-7 overflow-hidden border-b">
   <HeaderOrnament class="text-foreground-darker/80 -translate-x-4" />
 </div>
